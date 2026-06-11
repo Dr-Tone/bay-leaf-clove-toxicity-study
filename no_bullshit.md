@@ -59,10 +59,10 @@ These patterns are dead giveaways of AI-generated text. If any appear, the conte
 - **Do not restate the same finding twice** (once in words, once in a figure caption, and once in discussion). Say it once, in the right section.
 - **No introductory throat-clearing.** Do not start sections with overview sentences like "This section discusses..." or "The following chapter will cover...". Just start with the content.
 
-## 3. WRITE LIKE A FINAL YEAR STUDENT, NOT A JOURNALIST
+## 3. WRITE LIKE A FINAL YEAR STUDENT (COMPREHENSIVE ACADEMIC STYLE)
 
-- **Short paragraphs.** 3–5 sentences max. One idea per paragraph.
-- **Short sentences.** If a sentence exceeds 30 words, split it.
+- **Comprehensive Paragraphs.** Paragraphs should be detailed and thorough, fully exploring a concept before moving to the next (similar to the senior colleague's thesis).
+- **Academic Sentence Structure.** Longer, complex sentences are acceptable to convey nuanced scientific information, provided they remain grammatically correct and clear.
 - **Be specific.** Instead of "Various studies have shown beneficial effects", say "Taher et al. (2015) reported that clove extract reduced writhing by 65% at 200 mg/kg".
 - **No sweeping generalizations** about "traditional medicine" or "nature's remedies" unless you are citing a specific ethnobotanical survey.
 - **Contextual Voice Rule:**
