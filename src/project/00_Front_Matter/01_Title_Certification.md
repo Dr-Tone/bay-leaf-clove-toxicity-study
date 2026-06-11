@@ -1,2 +1,3 @@
-# Title and Certification
-This section contains the official title and the certification of the research project on bay leaf and clove.
+﻿# Title and Certification
+
+This research project titled "Evaluation of Acute Oral Toxicity and Antidysmenorrhea Effects of Clove (Syzygium aromaticum)" is certified as original work.

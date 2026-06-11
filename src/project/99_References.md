@@ -1,3 +1,3 @@
-# 99_References
+﻿# References
 
-References for the evaluation of acute oral toxicity and antidysmenorhea effects of bay leaf and clove.
+References will be compiled in APA format as per institutional guidelines.

@@ -1,7 +1,7 @@
-# evaluation of acute oral toxicity and antidysmenorhea effects of bay leaf[laurus nobilis] and clove[syzygium aromaticum]
+# Evaluation of Acute Oral Toxicity and Antidysmenorrhea Effects of Clove (Syzygium aromaticum)
 
 ## Project Overview
-This research project focuses on evaluating the acute oral toxicity and antidysmenorrhea effects of bay leaf and clove.
+This research project focuses on evaluating the acute oral toxicity and antidysmenorrhea effects of clove.
 
 ## Build Pipeline
 The project uses a Python-based build pipeline to compile granular Markdown files into a final `.docx` document.
