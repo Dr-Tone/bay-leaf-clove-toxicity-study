@@ -346,7 +346,8 @@ def build_docx(md_path, docx_path, image_path):
                     p_footer_cert.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     add_page_number(p_footer_cert.add_run())
                 elif text == "CHAPTER ONE":
-                    new_section = doc.add_section(WD_SECTION.NEW_PAGE)
+                    if len(doc.paragraphs) > 0:
+                        new_section = doc.add_section(WD_SECTION.NEW_PAGE)
                     new_section.page_width = Inches(8.27)
                     new_section.page_height = Inches(11.69)
                     new_section.top_margin, new_section.bottom_margin, new_section.right_margin = Inches(0.8), Inches(0.8), Inches(0.85)

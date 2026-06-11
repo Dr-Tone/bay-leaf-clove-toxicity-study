@@ -1,40 +1,5 @@
-# Title and Certification
-
-This research project titled "Evaluation of Acute Oral Toxicity and Antidysmenorrhea Effects of Clove (Syzygium aromaticum)" is certified as original work.
-
-
-# Certificate of No Plagiarism
-
-This is to certify that this research work has passed plagiarism checks and is free from any plagiarised content.
-
-
-# Dedication
-
-This work is dedicated to God Almighty and to all those who supported this research journey.
-
-
-# Acknowledgement
-
-I would like to express my sincere gratitude to my supervisor, family, and friends for their invaluable support.
-
-
-<div style="text-align: center;">
-
-# TABLE OF CONTENTS
-
-</div>
-
-
-# List of Figures
-
-
-# List of Abbreviations
-
-
-# Abstract
-
-This study evaluates the acute oral toxicity and antidysmenorrhea effects of hydroalcoholic extract of clove (Syzygium aromaticum) in experimental animal models.
-
+# CHAPTER ONE
+# LITERATURE REVIEW
 
 ## 1.1 Background of Dysmenorrhea
 
@@ -306,57 +271,57 @@ This preclinical investigation holds profound scientific and clinical significan
 If the hypothesis is confirmed—that the extract is both highly safe and profoundly effective at reducing dysmenorrheic pain—this research will provide the definitive preclinical foundation necessary to justify and design future human clinical trials. Ultimately, this work possesses the potential to introduce a highly accessible, culturally acceptable, and economically viable natural therapeutic alternative into standard clinical practice. By offering a safe and effective mechanism to manage severe menstrual pain without the gastrointestinal and systemic toxicities associated with chronic NSAID or hormonal contraceptive use, this research directly contributes to drastically improving the health-related quality of life, educational progression, and occupational stability of millions of women globally.
 
 
-﻿# Materials and Chemicals
+# Materials and Chemicals
 
 The materials and reagents used in this study include solvents, chemicals, and equipment required for extraction, toxicity testing, and pharmacological evaluation.
 
 
-﻿# Collection and Preparation of Plant Extracts
+# Collection and Preparation of Plant Extracts
 
 Clove buds were collected, authenticated, dried, and subjected to hydroalcoholic extraction to obtain the crude extract.
 
 
-﻿# Experimental Animals and Housing
+# Experimental Animals and Housing
 
 Adult female Swiss albino mice were obtained, acclimatized, and housed under standard laboratory conditions with free access to feed and water.
 
 
-﻿# Acute Oral Toxicity Study
+# Acute Oral Toxicity Study
 
 The acute oral toxicity study was conducted according to OECD guidelines to determine the median lethal dose (LD50) of the plant extracts.
 
 
-﻿# Antidysmenorrhea Study
+# Antidysmenorrhea Study
 
 The antidysmenorrhea effect was evaluated using animal models of uterine contractility induced by oxytocin or other spasmogenic agents.
 
 
-﻿# Data Analysis
+# Data Analysis
 
 Data were expressed as mean plus or minus SEM and analyzed using appropriate statistical tests with significance set at p < 0.05.
 
 
-﻿# Acute Toxicity Results
+# Acute Toxicity Results
 
 The results of the acute oral toxicity study including behavioral observations, mortality, and calculated LD50 values are presented.
 
 
-﻿# Antidysmenorrhea Results
+# Antidysmenorrhea Results
 
 The effects of the extracts on uterine contractility parameters including frequency, amplitude, and tone are presented.
 
 
-﻿# Discussion
+# Discussion
 
 The findings of this study are discussed in relation to existing literature on the pharmacological effects of clove.
 
 
-﻿# Conclusion
+# Conclusion
 
 This study demonstrates that hydroalcoholic extract of clove possesses antidysmenorrhea properties with a favorable safety profile.
 
 
-﻿# Recommendations
+# Recommendations
 
 Further studies including chronic toxicity, clinical trials, and mechanism-based investigations are recommended to fully establish therapeutic potential.
 

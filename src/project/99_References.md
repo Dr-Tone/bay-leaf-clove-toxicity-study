@@ -1,8 +1,5 @@
 # References
 
-*Document prepared for Pharm.D final year research project. This concept document presents the scientific foundation, rationale, and proposed methodology for evaluating the acute oral toxicity and antidysmenorrhea effects of clove (Syzygium aromaticum).*
-
----
 
 Agbaje, E. O., Adeneye, A. A., & Daramola, A. O. (2010). Biochemical and toxicological studies of aqueous extract of Syzigium aromaticum (L.) Merr. & Perry (Myrtaceae) in rodents. *African Journal of Traditional, Complementary and Alternative Medicines*, 6(3), 241–254. https://doi.org/10.4314/ajtcam.v6i3.57162
 

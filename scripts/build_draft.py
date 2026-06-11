@@ -32,7 +32,7 @@ def compile_draft():
             files = sorted([f for f in os.listdir(d_path) if f.endswith(".md")])
             for filename in files:
                 filepath = os.path.join(d_path, filename)
-                with open(filepath, 'r', encoding='utf-8') as infile:
+                with open(filepath, 'r', encoding='utf-8-sig') as infile:
                     content = infile.read().strip()
                     if content:
                         outfile.write(content + "\n\n") # Natural spacing
@@ -40,7 +40,7 @@ def compile_draft():
         # Append References
         if os.path.exists(ref_file):
             print(f"Processing: References")
-            with open(ref_file, 'r', encoding='utf-8') as infile:
+            with open(ref_file, 'r', encoding='utf-8-sig') as infile:
                 ref_content = infile.read().strip()
                 if ref_content:
                     outfile.write(ref_content + "\n\n")
