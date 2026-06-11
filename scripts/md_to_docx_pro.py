@@ -155,17 +155,17 @@ def build_docx(md_path, docx_path, image_path):
     for p in footer.paragraphs:
         p.text = ""
     
-    with open(md_path, 'r', encoding='utf-8') as f:
+    with open(md_path, 'r', encoding='utf-8-sig') as f:
         lines = f.readlines()
 
-    current_alignment = WD_ALIGN_PARAGRAPH.LEFT
+    current_alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     title_text = "EVALUATION OF ACUTE ORAL TOXICITY AND ANTIDYSMENORRHEA EFFECTS OF CLOVE (SYZYGIUM AROMATICUM)"
     title_seen = False
     
     i = 0
     while i < len(lines):
-        line = lines[i].strip()
+        line = lines[i].replace('﻿', '').strip().replace('\ufeff', '')
         
         if '<div' in line:
             # Handle Page Breaks
@@ -178,11 +178,11 @@ def build_docx(md_path, docx_path, image_path):
                 align_val = align_match.group(1).lower()
                 if align_val == 'center': current_alignment = WD_ALIGN_PARAGRAPH.CENTER
                 elif align_val == 'justify': current_alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-                else: current_alignment = WD_ALIGN_PARAGRAPH.LEFT
+                else: current_alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             i += 1
             continue
         elif '</div>' in line:
-            current_alignment = WD_ALIGN_PARAGRAPH.LEFT
+            current_alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             i += 1
             continue
         elif '---' == line:
@@ -467,7 +467,7 @@ def build_docx(md_path, docx_path, image_path):
 
         # Normal Paragraph
         raw_line = lines[i]
-        text_content = raw_line.rstrip('\n')
+        text_content = raw_line.replace('﻿', '').rstrip('\n').replace('\ufeff', '')
         
         if not clean_html(text_content).strip(): 
             i += 1

@@ -1,1 +1,1 @@
-﻿# List of Abbreviations
+# List of Abbreviations

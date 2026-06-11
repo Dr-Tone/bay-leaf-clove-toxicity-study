@@ -1,1 +1,1 @@
-﻿# List of Figures
+# List of Figures

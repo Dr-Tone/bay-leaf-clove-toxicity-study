@@ -1,19 +1,19 @@
-﻿# Title and Certification
+# Title and Certification
 
 This research project titled "Evaluation of Acute Oral Toxicity and Antidysmenorrhea Effects of Clove (Syzygium aromaticum)" is certified as original work.
 
 
-﻿# Certificate of No Plagiarism
+# Certificate of No Plagiarism
 
 This is to certify that this research work has passed plagiarism checks and is free from any plagiarised content.
 
 
-﻿# Dedication
+# Dedication
 
 This work is dedicated to God Almighty and to all those who supported this research journey.
 
 
-﻿# Acknowledgement
+# Acknowledgement
 
 I would like to express my sincere gratitude to my supervisor, family, and friends for their invaluable support.
 
@@ -25,16 +25,13 @@ I would like to express my sincere gratitude to my supervisor, family, and frien
 </div>
 
 
-﻿# Table of Contents
+# List of Figures
 
 
-﻿# List of Figures
+# List of Abbreviations
 
 
-﻿# List of Abbreviations
-
-
-﻿# Abstract
+# Abstract
 
 This study evaluates the acute oral toxicity and antidysmenorrhea effects of hydroalcoholic extract of clove (Syzygium aromaticum) in experimental animal models.
 
@@ -366,9 +363,6 @@ Further studies including chronic toxicity, clinical trials, and mechanism-based
 
 # References
 
-*Document prepared for Pharm.D final year research project. This concept document presents the scientific foundation, rationale, and proposed methodology for evaluating the acute oral toxicity and antidysmenorrhea effects of clove (Syzygium aromaticum).*
-
----
 
 Agbaje, E. O., Adeneye, A. A., & Daramola, A. O. (2010). Biochemical and toxicological studies of aqueous extract of Syzigium aromaticum (L.) Merr. & Perry (Myrtaceae) in rodents. *African Journal of Traditional, Complementary and Alternative Medicines*, 6(3), 241–254. https://doi.org/10.4314/ajtcam.v6i3.57162
 
