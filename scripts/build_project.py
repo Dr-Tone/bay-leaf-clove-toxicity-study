@@ -6,6 +6,8 @@ project_dir = os.path.join(base_dir, "src", "project")
 output_dir = os.path.join(base_dir, "output")
 output_file = os.path.join(output_dir, "PAUL-OMOBUDE-PROJECT-DRAFT.MD")
 
+os.makedirs(output_dir, exist_ok=True)
+
 # Clean static TOC file
 toc_file = os.path.join(project_dir, "00_Front_Matter", "04_Table_of_Contents.md")
 os.makedirs(os.path.dirname(toc_file), exist_ok=True)
