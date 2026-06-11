@@ -10,10 +10,9 @@ output_file = os.path.join(output_dir, "iyare-draft.md")
 os.makedirs(output_dir, exist_ok=True)
 
 def compile_draft():
-    # STRICTLY build only Chapter 1 and Chapter 2
+    # STRICTLY build only Chapter 1
     dir_order = [
-        '01_Chapter_1_INTRODUCTION_AND_LITERATURE_REVIEW',
-        '02_Chapter_2_MATERIALS_AND_METHODS'
+        '01_Chapter_1_INTRODUCTION_AND_LITERATURE_REVIEW'
     ]
     ref_file = os.path.join(src_dir, '99_References.md')
     

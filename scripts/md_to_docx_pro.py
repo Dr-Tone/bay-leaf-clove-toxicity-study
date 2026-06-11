@@ -348,20 +348,20 @@ def build_docx(md_path, docx_path, image_path):
                 elif text == "CHAPTER ONE":
                     if len(doc.paragraphs) > 0:
                         new_section = doc.add_section(WD_SECTION.NEW_PAGE)
-                    new_section.page_width = Inches(8.27)
-                    new_section.page_height = Inches(11.69)
-                    new_section.top_margin, new_section.bottom_margin, new_section.right_margin = Inches(0.8), Inches(0.8), Inches(0.85)
-                    new_section.left_margin = Inches(0.85)
-                    new_section.footer.is_linked_to_previous = False
-                    sectPr2 = new_section._sectPr
-                    pgNumType2 = OxmlElement('w:pgNumType')
-                    pgNumType2.set(qn('w:fmt'), 'decimal')
-                    pgNumType2.set(qn('w:start'), '1')
-                    sectPr2.append(pgNumType2)
-                    footer2 = new_section.footer
-                    p_footer2 = footer2.paragraphs[0]
-                    p_footer2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    add_page_number(p_footer2.add_run())
+                        new_section.page_width = Inches(8.27)
+                        new_section.page_height = Inches(11.69)
+                        new_section.top_margin, new_section.bottom_margin, new_section.right_margin = Inches(0.8), Inches(0.8), Inches(0.85)
+                        new_section.left_margin = Inches(0.85)
+                        new_section.footer.is_linked_to_previous = False
+                        sectPr2 = new_section._sectPr
+                        pgNumType2 = OxmlElement('w:pgNumType')
+                        pgNumType2.set(qn('w:fmt'), 'decimal')
+                        pgNumType2.set(qn('w:start'), '1')
+                        sectPr2.append(pgNumType2)
+                        footer2 = new_section.footer
+                        p_footer2 = footer2.paragraphs[0]
+                        p_footer2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        add_page_number(p_footer2.add_run())
                 elif text.startswith("CHAPTER "):
                     doc.add_page_break()
                 elif text not in no_break_headings and len(doc.paragraphs) > 0:
