@@ -496,7 +496,7 @@ def build_docx(md_path, docx_path, image_path):
             if clean_text == "**BY**":
                 p.paragraph_format.space_before = Pt(15 * mult)
                 p.paragraph_format.space_after = Pt(15 * mult)
-            elif "PAUL OSAHENI OMOBUDE" in clean_text:
+            elif "IYARE" in clean_text:
                 p.paragraph_format.space_after = Pt(5 * mult)
             elif "MAT. NUMBER" in clean_text:
                 p.paragraph_format.space_after = Pt(10 * mult)
@@ -538,7 +538,7 @@ def build_docx(md_path, docx_path, image_path):
 
 if __name__ == "__main__":
     import sys
-    md = sys.argv[1] if len(sys.argv) > 1 else "output/PAUL-OMOBUDE-PROJECT-DRAFT.MD"
-    docx = sys.argv[2] if len(sys.argv) > 2 else "output/PAUL-OMOBUDE-PROJECT-DRAFT.DOCX"
+    md = sys.argv[1] if len(sys.argv) > 1 else "output/IYARE-PROJECT-DRAFT.MD"
+    docx = sys.argv[2] if len(sys.argv) > 2 else "output/IYARE-PROJECT-DRAFT.DOCX"
     img = "output/media/image1.png"
     build_docx(md, docx, img)

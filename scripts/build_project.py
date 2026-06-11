@@ -4,7 +4,7 @@ import re
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 project_dir = os.path.join(base_dir, "src", "project")
 output_dir = os.path.join(base_dir, "output")
-output_file = os.path.join(output_dir, "PAUL-OMOBUDE-PROJECT-DRAFT.MD")
+output_file = os.path.join(output_dir, "IYARE-PROJECT-DRAFT.MD")
 
 os.makedirs(output_dir, exist_ok=True)
 
