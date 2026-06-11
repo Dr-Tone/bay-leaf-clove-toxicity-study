@@ -8,6 +8,7 @@ This file exists because AI loves to hallucinate, pad word count, and sound like
 
 - **Every single in-text citation MUST have a corresponding entry in the reference list.** If it's not in the reference list, delete the in-text citation. No exceptions.
 - **Every reference MUST be real.** No "et al." combinations you made up. No plausible-sounding journals. If you cannot verify a paper exists (DOI, PubMed ID, or a reputable publisher URL), do NOT include it.
+- **Priority MUST be given to the most recent references available.** When multiple papers support the same claim, cite the newest one unless the older paper is a classic/foundational paper that the newer one builds on. A reference from 2005 that says the same thing as a 2022 review is dead weight — use the 2022 review. The only exceptions are: (a) the older paper is the original discovery, (b) you need the specific data only that paper provides, or (c) the newer paper explicitly cites and builds on the older one — in which case cite both or cite the newer one with "as reviewed in".
 - **If you are unsure whether a paper exists, do not guess. Remove it.**
 - **When replacing a fabricated citation**, only use a reference that is **already in the project's reference list** and whose actual content matches the claim being made.
 - **Do not generate fake DOIs.** A DOI must resolve to the actual paper.

@@ -269,17 +269,12 @@ Ameade, E. P. K., Amalba, A., & Mohammed, B. S. (2018). Prevalence of dysmenorrh
 
 American College of Obstetricians and Gynecologists. (2018). ACOG Committee Opinion No. 760: Dysmenorrhea and endometriosis in the adolescent. *Obstetrics & Gynecology*, 132(6), e249–e258. https://doi.org/10.1097/AOG.0000000000002978
 
-Ahmad, S., Latif, A., & Qasmi, I. A. (2004). Effect of 50% ethanolic extract of Syzygium aromaticum (L.) Merr. & Perry (clove) on sexual behaviour of normal male rats. *BMC Complementary and Alternative Medicine*, 4, 17. https://doi.org/10.1186/1472-6882-4-17
-
-Alfikri, F. N., Pujiarti, R., Wibisono, M. G., & Hardiyanto, E. B. (2020). Yield, quality, and antioxidant activity of clove (Syzygium aromaticum L.) bud oil at the different phenological stages in young and mature trees. *Scientifica*, 2020, 8859432. https://doi.org/10.1155/2020/8859432
 
 Alma, M. H., Ertas, M., Nitz, S., & Kollmannsberger, H. (2007). Chemical composition and content of essential oil from the bud of cultivated Turkish clove (Syzygium aromaticum L.). *BioResources*, 2(2), 265–269. https://doi.org/10.15376/biores.2.2.265-269
 
 Altunyurt, S., Göl, M., Altunyurt, S., Sezer, O., & Demir, N. (2005). Primary dysmenorrhea and uterine blood flow: A color Doppler study. *Journal of Reproductive Medicine*, 50(4), 251–255.
 
 Al-Zereini, W. A., Al-Trawneh, I. N., Al-Qudah, M. A., & Qaralleh, H. (2023). Antibacterial, antioxidant, and cytotoxic activities of Syzygium aromaticum (L.) Merr. & Perry essential oil with identification of its chemical constituents. *Zeitschrift für Naturforschung C*, 78(3–4), 105–112. https://doi.org/10.1515/znc-2022-0120
-
-Anderson, W. G., McKinley, R. S., & Colavecchia, M. (1997). The use of clove oil as an anesthetic for rainbow trout and its effects on swimming performance. *North American Journal of Fisheries Management*, 17(2), 301–307. https://doi.org/10.1577/1548-8675(1997)017<0301:TUOCOA>2.3.CO;2
 
 Anggitasari, W. (2018). Test for analgesic effects of clove leaf oil (Syzygium aromaticum) on Balb/C strain male mice. *Jurnal Kesehatan dr. Soebandi*, 6(2), 16–20. https://doi.org/10.36858/jkds.v6i2.120
 
@@ -493,8 +488,6 @@ Yogalakshmi, B., Viswanathan, P., & Anuradha, C. V. (2010). Investigation of ant
 
 Zheng, G. Q., Kenney, P. M., & Lam, L. K. (1992). Sesquiterpenes from clove (Eugenia caryophyllata) as potential anticarcinogenic agents. *Journal of Natural Products*, 55(7), 999–1003. https://doi.org/10.1021/np50085a029
 
-Coelho-de-Souza, A. N., Lahlou, S., Barreto, J. E., Yum, M. E., Oliveira, A. C., Oliveira, H. D., ... & Leal-Cardoso, J. H. (2005). Essential oil of Croton zehntneri and its main constituent anethole block the electrical and mechanical activity of the rat uterus. *Planta Medica*, 71(3), 237–242. https://doi.org/10.1055/s-2005-864109
-
 Damiani, C. E., Rossoni, L. V., & Vassallo, D. V. (2003). Vasorelaxant effects of eugenol on rat thoracic aorta. *Vascular Pharmacology*, 40(1), 59–66. https://doi.org/10.1016/S1537-1891(02)00311-7
 
 Dawood, M. Y. (1984). Ibuprofen and dysmenorrhea. *American Journal of Medicine*, 77(1), 87–94. https://doi.org/10.1016/S0002-9343(84)80025-X
@@ -512,8 +505,6 @@ Eisenhut, M. (2024). Eugenol: A comprehensive review of its pharmacological prop
 Ekpenyong, C. E., Davis, K. J., Akpan, U. P., & Daniel, N. E. (2022). Dysmenorrhea: A review of current knowledge and management strategies. *Journal of Obstetrics and Gynaecology*, 42(5), 1033–1044. https://doi.org/10.1080/01443615.2021.2004104
 
 Feng, J., Luo, J., Wang, J., & Zhang, Y. (2023). Eugenol: A potential natural product for the treatment of inflammatory diseases. *Frontiers in Pharmacology*, 14, 1185412. https://doi.org/10.3389/fphar.2023.1185412
-
-Fujisawa, S., & Kadoma, Y. (1997). Effect of phenolic compounds on the polymerization of methyl methacrylate. *Journal of Dental Research*, 76(9), 1519–1525. https://doi.org/10.1177/00220345970760090301
 
 Gaytán, M., de la Torre, M. A., & Morales-Ríos, M. S. (2019). Eugenol: A review of its pharmacological properties and potential therapeutic applications. *Mini-Reviews in Medicinal Chemistry*, 19(6), 471–481. https://doi.org/10.2174/1389557518666181022120248
 
@@ -602,8 +593,6 @@ Peana, A. T., & Moretti, M. D. L. (2022). Eugenol and its derivatives as potenti
 Pina, E. S., & Silva, D. M. (2021). TRPV1 channels and eugenol: Mechanisms of analgesic action. *Neuroscience Letters*, 761, 136117. https://doi.org/10.1016/j.neulet.2021.136117
 
 Prabhu, K. S., & Rao, M. S. (2022). Cyclooxygenase enzymes and their role in inflammation and pain. *Journal of Biosciences*, 47(2), 35. https://doi.org/10.1007/s12038-022-00266-z
-
-Proctor, M. L., & Murphy, P. A. (2001). Herbal and dietary therapies for primary and secondary dysmenorrhoea. *Cochrane Database of Systematic Reviews*, (3), CD002124. https://pubmed.ncbi.nlm.nih.gov/11687013/
 
 Rahnama, P., & Montazeri, A. (2021). Complementary and alternative medicine for dysmenorrhea: A systematic review. *Journal of Alternative and Complementary Medicine*, 27(5), 387–399. https://doi.org/10.1089/acm.2020.0436
 
