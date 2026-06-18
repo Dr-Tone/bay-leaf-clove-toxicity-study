@@ -239,9 +239,10 @@ def build_docx(md_path, docx_path, image_path):
                     for b in existing_borders:
                         tblPr.remove(b)
                         
-                    # 2. Add Top, Bottom, and Inside Horizontal (below header) borders
+                    # 2. Add Top, Bottom, and Vertical borders
                     tblBorders = OxmlElement('w:tblBorders')
                     
+                    # Set Top and Bottom borders (horizontal)
                     for border_name in ['top', 'bottom']:
                         b = OxmlElement(f'w:{border_name}')
                         b.set(qn('w:val'), 'single')
@@ -250,11 +251,19 @@ def build_docx(md_path, docx_path, image_path):
                         b.set(qn('w:color'), '000000')
                         tblBorders.append(b)
                     
-                    # Explicitly set other borders to 'nil' (transparent)
-                    for border_name in ['left', 'right', 'insideV', 'insideH']:
+                    # Set Left, Right, and Inside Vertical borders
+                    for border_name in ['left', 'right', 'insideV']:
                         b = OxmlElement(f'w:{border_name}')
-                        b.set(qn('w:val'), 'nil')
+                        b.set(qn('w:val'), 'single')
+                        b.set(qn('w:sz'), '6') # 0.75 pt
+                        b.set(qn('w:space'), '0')
+                        b.set(qn('w:color'), '000000')
                         tblBorders.append(b)
+                    
+                    # Explicitly set Inside Horizontal borders to 'nil' (no horizontal lines between data rows)
+                    b = OxmlElement('w:insideH')
+                    b.set(qn('w:val'), 'nil')
+                    tblBorders.append(b)
                         
                     tblPr.append(tblBorders)
                     
