@@ -27,13 +27,10 @@ Table 3.2 summarizes the group means, standard errors, and Tukey-adjusted compar
 | **MG (Model Control)** | 1.3959 ± 0.2359 | 1.4010 ± 0.2637 | 0.4533 ± 0.0414 | 1.1560 ± 0.0620 | 0.1947 ± 0.0199 | 69.9454 ± 0.5783 | 17.0972 ± 0.6768 |
 | **BL (Bay Leaf Extract)** | 1.1510 ± 0.0737 | 1.5926 ± 0.0894 | 0.5541 ± 0.0509 | 1.6304 ± 0.1136 | 0.2652 ± 0.0208 | 68.4809 ± 2.5697 | 17.8401 ± 1.1793 |
 | **IBU (Ibuprofen)** | 1.2966 ± 0.1628 | 1.4709 ± 0.1637 | 0.6145 ± 0.1466 | 1.6081 ± 0.2754 | 0.2377 ± 0.0524 | 70.0546 ± 0.6085 | 16.6544 ± 0.7918 |
-| **CL (Clove Extract)** | 1.1504 ± 0.2566 | 1.6703 ± 0.3716 | 0.5725 ± 0.0648 | 1.7265 ± 0.3234 | 0.2082 ± 0.0565 | 69.1803 ± 0.9836 | 20.4797 ± 5.2768 |
-| **p-value (MG vs NG)** | 0.9971 (ns) | 0.9979 (ns) | 0.9165 (ns) | 0.9957 (ns) | 1.0000 (ns) | 0.9998 (ns) | 0.9873 (ns) |
-| **p-value (BL vs MG)** | 0.7548 (ns) | 0.9243 (ns) | 0.9043 (ns) | 0.3864 (ns) | 0.6683 (ns) | 0.9985 (ns) | 0.9986 (ns) |
-| **p-value (IBU vs MG)** | 0.9955 (ns) | 0.9993 (ns) | 0.8153 (ns) | 0.6660 (ns) | 0.9676 (ns) | 1.0000 (ns) | 0.9999 (ns) |
-| **p-value (CL vs MG)** | 0.9186 (ns) | 0.9308 (ns) | 0.9511 (ns) | 0.5611 (ns) | 0.9998 (ns) | 1.0000 (ns) | 0.9027 (ns) |
-| **p-value (BL vs IBU)** | 0.9519 (ns) | 0.9849 (ns) | 0.9842 (ns) | 1.0000 (ns) | 0.9839 (ns) | 0.9980 (ns) | 0.9914 (ns) |
-| **p-value (CL vs IBU)** | 0.9871 (ns) | 0.9759 (ns) | 0.9990 (ns) | 0.9977 (ns) | 0.9947 (ns) | 1.0000 (ns) | 0.8568 (ns) |
+| **p-value (MG vs NG)** | 0.9866 (ns) | 0.9887 (ns) | 0.8443 (ns) | 0.9821 (ns) | 0.9998 (ns) | 0.9985 (ns) | 0.9535 (ns) |
+| **p-value (BL vs MG)** | 0.6331 (ns) | 0.8388 (ns) | 0.8275 (ns) | 0.2866 (ns) | 0.5489 (ns) | 0.9923 (ns) | 0.9909 (ns) |
+| **p-value (IBU vs MG)** | 0.9812 (ns) | 0.9953 (ns) | 0.7176 (ns) | 0.5403 (ns) | 0.9199 (ns) | 1.0000 (ns) | 0.9991 (ns) |
+| **p-value (BL vs IBU)** | 0.8903 (ns) | 0.9512 (ns) | 0.9553 (ns) | 0.9998 (ns) | 0.9526 (ns) | 0.9905 (ns) | 0.9651 (ns) |
 
 ## Effect of Plant Extracts on Oxidative Stress Parameters
 
@@ -53,9 +50,9 @@ Direct comparison between the clove extract and the reference standard Ibuprofen
 
 ![Figure 3.2: Effect of Bay Leaf extract on myometrial tissue oxidative stress parameters.](graphs/bay_leaf_markers_bar_chart.png)
 
-Bay leaf assay mean values are displayed in the bar chart above. All comparisons in this assay are statistically non-significant. The mean superoxide dismutase activity of the normal group is 1.3069 U/g Prot, whereas the model group is 1.4010 U/g Prot (Tukey p = 0.9979). The mean catalase activity of the normal group is 0.3285 U/g Prot compared to 0.4533 U/g Prot in the model group (Tukey p = 0.9165).
+Bay leaf assay mean values are displayed in the bar chart above. All comparisons in this assay are statistically non-significant. The mean superoxide dismutase activity of the normal group is 1.3069 U/g Prot, whereas the model group is 1.4010 U/g Prot (Tukey p = 0.9887). The mean catalase activity of the normal group is 0.3285 U/g Prot compared to 0.4533 U/g Prot in the model group (Tukey p = 0.8443).
 
-The administration of the bay leaf extract and the reference standard Ibuprofen fails to produce statistically significant alterations compared to the model control. Furthermore, direct comparison between the bay leaf extract and Ibuprofen (BL vs. IBU) reveals no significant difference across all parameters (Tukey p > 0.95 for all markers, including p = 0.9849 for SOD, p = 0.9842 for CAT, and p = 0.9839 for MDA). The baseline levels of enzymes and MDA remain statistically stable across all experimental cohorts in this study.
+The administration of the bay leaf extract and the reference standard Ibuprofen fails to produce statistically significant alterations compared to the model control. Furthermore, direct comparison between the bay leaf extract and Ibuprofen (BL vs. IBU) reveals no significant difference across all parameters (Tukey p > 0.89 for all markers, including p = 0.9512 for SOD, p = 0.9553 for CAT, and p = 0.9526 for MDA). The baseline levels of enzymes and MDA remain statistically stable across all experimental cohorts in this study.
 
 ## Distribution and Variance of Superoxide Dismutase (SOD) and Malondialdehyde (MDA) Activities
 

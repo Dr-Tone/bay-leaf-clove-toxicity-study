@@ -59,7 +59,8 @@ def generate_visualizations():
     # 2. Load Bay Leaf data
     wb_bay = openpyxl.load_workbook(bay_fp, data_only=True)
     df_bay = parse_groups_from_sheet(wb_bay.active, 28)
-    group_map_bay = {"NG": "Normal Control", "MG": "Model Control", "BL": "Bay Leaf Extract", "IBU": "Ibuprofen", "CL": "Clove Extract"}
+    df_bay = df_bay[df_bay["Group"] != "CL"]
+    group_map_bay = {"NG": "Normal Control", "MG": "Model Control", "BL": "Bay Leaf Extract", "IBU": "Ibuprofen"}
     df_bay["GroupName"] = df_bay["Group"].map(group_map_bay)
     
     # Combined df for general analyses (e.g. correlation)
@@ -124,11 +125,11 @@ def generate_visualizations():
         ax_bay = axes_bay[idx]
         bay_means = df_bay.groupby("GroupName")[marker].mean()
         bay_sems = df_bay.groupby("GroupName")[marker].apply(stats.sem)
-        order_bay = ["Normal Control", "Model Control", "Bay Leaf Extract", "Ibuprofen", "Clove Extract"]
+        order_bay = ["Normal Control", "Model Control", "Bay Leaf Extract", "Ibuprofen"]
         bay_means = bay_means.reindex(order_bay)
         bay_sems = bay_sems.reindex(order_bay)
         
-        bars_bay = ax_bay.bar(order_bay, bay_means, yerr=bay_sems, capsize=6, color=palette[:5], edgecolor='black', alpha=0.9)
+        bars_bay = ax_bay.bar(order_bay, bay_means, yerr=bay_sems, capsize=6, color=palette[:4], edgecolor='black', alpha=0.9)
         ax_bay.set_title(marker_titles[marker], fontweight='bold', fontsize=12)
         ax_bay.set_ylabel("Value")
         ax_bay.set_xticks(range(len(order_bay)))
@@ -173,8 +174,8 @@ def generate_visualizations():
         plt.close()
         
         # Bay Leaf Boxplot
-        plt.figure(figsize=(9, 6))
-        sns.boxplot(x="GroupName", y=marker, data=df_bay, order=order_bay, palette=palette[:5], width=0.5)
+        plt.figure(figsize=(8, 6))
+        sns.boxplot(x="GroupName", y=marker, data=df_bay, order=order_bay, palette=palette[:4], width=0.5)
         sns.stripplot(x="GroupName", y=marker, data=df_bay, order=order_bay, color="black", alpha=0.6, size=6, jitter=0.2)
         plt.title(f"Distribution of {marker_titles[marker]} (Bay Leaf Assay)", fontweight='bold', fontsize=12)
         plt.ylabel(marker_titles[marker])
@@ -262,7 +263,7 @@ def generate_visualizations():
             df_bay_norm[marker] = 0.0
 
     bay_radar_means = df_bay_norm.groupby("Group")[markers].mean()
-    bay_radar_means = bay_radar_means.reindex(["NG", "MG", "BL", "IBU", "CL"])
+    bay_radar_means = bay_radar_means.reindex(["NG", "MG", "BL", "IBU"])
     
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
     ax.set_theta_offset(np.pi / 2)
@@ -277,11 +278,10 @@ def generate_visualizations():
         "NG": "Normal Control (NG)",
         "MG": "Model Control (MG)",
         "BL": "Bay Leaf Extract (BL)",
-        "IBU": "Ibuprofen (IBU)",
-        "CL": "Clove Extract (CL)"
+        "IBU": "Ibuprofen (IBU)"
     }
     
-    for grp in ["NG", "MG", "BL", "IBU", "CL"]:
+    for grp in ["NG", "MG", "BL", "IBU"]:
         if grp in bay_radar_means.index:
             values = bay_radar_means.loc[grp].values.flatten().tolist()
             values += values[:1]

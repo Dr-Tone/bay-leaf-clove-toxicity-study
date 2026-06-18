@@ -288,30 +288,24 @@ def consolidate():
         ibu_stat = calculate_group_stats(ibu_rows, col)
         mg_stat = calculate_group_stats(mg_rows, col)
         ng_stat = calculate_group_stats(ng_rows, col)
-        cl_bay_stat = calculate_group_stats(cl_bay_rows, col)
         
         # Tukey HSD p-values
-        # Group order: NG (0), MG (1), BL (2), IBU (3), CL (4)
-        res_bay = stats.tukey_hsd(ng_stat["values"], mg_stat["values"], bl_stat["values"], ibu_stat["values"], cl_bay_stat["values"])
+        # Group order: NG (0), MG (1), BL (2), IBU (3)
+        res_bay = stats.tukey_hsd(ng_stat["values"], mg_stat["values"], bl_stat["values"], ibu_stat["values"])
         p_mg_vs_ng = res_bay.pvalue[1, 0]
         p_bl_vs_mg = res_bay.pvalue[2, 1]
         p_ibu_vs_mg = res_bay.pvalue[3, 1]
-        p_cl_vs_mg = res_bay.pvalue[4, 1]
         p_bl_vs_ibu = res_bay.pvalue[2, 3]
-        p_cl_vs_ibu = res_bay.pvalue[4, 3]
         
         bay_stats[col] = {
             "ng": ng_stat,
             "mg": mg_stat,
             "bl": bl_stat,
             "ibu": ibu_stat,
-            "cl": cl_bay_stat,
             "p_mg_ng": p_mg_vs_ng,
             "p_bl_mg": p_bl_vs_mg,
             "p_ibu_mg": p_ibu_vs_mg,
-            "p_cl_mg": p_cl_vs_mg,
-            "p_bl_ibu": p_bl_vs_ibu,
-            "p_cl_ibu": p_cl_vs_ibu
+            "p_bl_ibu": p_bl_vs_ibu
         }
         
     # Append Bay Leaf stats to sheet
@@ -330,8 +324,7 @@ def consolidate():
         ("NG (Normal Control)", "ng"),
         ("MG (Model Control)", "mg"),
         ("BL (Bay Leaf Extract)", "bl"),
-        ("IBU (Ibuprofen)", "ibu"),
-        ("CL (Clove Extract - CL 16-17)", "cl")
+        ("IBU (Ibuprofen)", "ibu")
     ]
     
     curr_row = start_row + 2
@@ -355,9 +348,7 @@ def consolidate():
         ("p-value (MG vs NG)", "p_mg_ng"),
         ("p-value (BL vs MG)", "p_bl_mg"),
         ("p-value (IBU vs MG)", "p_ibu_mg"),
-        ("p-value (CL vs MG)", "p_cl_mg"),
-        ("p-value (BL vs IBU)", "p_bl_ibu"),
-        ("p-value (CL vs IBU)", "p_cl_ibu")
+        ("p-value (BL vs IBU)", "p_bl_ibu")
     ]
     
     for label, key in p_values_to_write_bay:
