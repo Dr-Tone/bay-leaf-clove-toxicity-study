@@ -48,7 +48,7 @@ Combined oral contraceptives and progestin-only preparations represent an altern
 
 ### 2.4 The Need for Alternative Therapies
 
-Given the limitations of current pharmacotherapy—including adverse effects, therapeutic failure rates, and contraindications—there is a compelling need for safer, effective alternative treatments for dysmenorrhea. Medicinal plants represent a promising source of such alternatives, and many have a long history of traditional use in managing menstrual disorders (Mirabi et al., 2014; Pattanittum et al., 2016). Systematic reviews have demonstrated that several herbal medicines show efficacy comparable to NSAIDs for dysmenorrhea with fewer side effects (Ramezani & Jalali, 2021; Rahnama & Montazeri, 2021).
+Given the limitations of current pharmacotherapy, including adverse effects, therapeutic failure rates, and contraindications, there is a compelling need for safer, effective alternative treatments for dysmenorrhea. Medicinal plants represent a promising source of such alternatives, and many have a long history of traditional use in managing menstrual disorders (Mirabi et al., 2014; Pattanittum et al., 2016). Systematic reviews have demonstrated that several herbal medicines show efficacy comparable to NSAIDs for dysmenorrhea with fewer side effects (Ramezani & Jalali, 2021; Rahnama & Montazeri, 2021).
 
 ---
 
@@ -128,7 +128,7 @@ The anti-inflammatory properties of clove and its constituent eugenol have been 
 
 **Multiple inflammatory mediator suppression**: Eugenol inhibits the production of pro-inflammatory cytokines including tumor necrosis factor-alpha (TNF-α), interleukin-1 beta (IL-1β), and interleukin-6 (IL-6) in activated macrophages (Dibazar et al., 2015; Rodrigues et al., 2009; Bachiega et al., 2012). It also suppresses nitric oxide (NO) production by downregulating inducible nitric oxide synthase (iNOS) expression (Li et al., 2006). Eugenol modulates the NLRP3 inflammasome pathway and NF-κB expression (Li et al., 2023).
 
-**In vivo anti-inflammatory activity**: The ethanolic extract of S. aromaticum demonstrated significant anti-inflammatory activity in the carrageenan-induced rat paw edema model, with efficacy rates of 79.41% and 82.39% at the 2nd and 4th hours, respectively, at a dose of 500 mg/kg—effects superior to those produced by indomethacin (Lughmani et al., 2017). Daniel et al. (2009) reported that eugenol reduced paw edema and pleural exudates in the carrageenan-induced inflammation model.
+**In vivo anti-inflammatory activity**: The ethanolic extract of S. aromaticum demonstrated significant anti-inflammatory activity in the carrageenan-induced rat paw edema model, with efficacy rates of 79.41% and 82.39% at the 2nd and 4th hours, respectively, at a dose of 500 mg/kg (effects superior to those produced by indomethacin) (Lughmani et al., 2017). Daniel et al. (2009) reported that eugenol reduced paw edema and pleural exudates in the carrageenan-induced inflammation model.
 
 **Molecular docking studies**: Computational analyses have revealed that eugenol fits into the active site of COX-2 via hydrogen bonding with Ser530 and hydrophobic interactions with multiple amino acid residues. Importantly, eugenol also demonstrates dual COX-2/5-LOX inhibitory activity, which may offer therapeutic advantages over selective COX-2 inhibitors by avoiding the shunting of arachidonic acid toward the leukotriene pathway (da Silva et al., 2020).
 
@@ -190,7 +190,7 @@ Assessment of the safety profile of clove is essential for its development as a 
 - Eugenol (mouse): oral LD50 of 3 g/kg; intraperitoneal LD50 of 500 mg/kg
 - A single oral dose of 5,000 mg/kg of clove essential oil in rats resulted in mortality within 24 hours, with postmortem findings including gastric and intestinal bleeding and pleural effusion.
 
-**Johannah et al. (2016)** investigated the safety of Clovinol, a standardized polyphenolic extract of clove buds. Acute oral administration at 5 g/kg body weight in Wistar rats for 14 days produced no mortality or adverse effects. Subchronic administration (0.25, 0.5, and 1 g/kg/day for 90 days) established the No Observed Adverse Effect Level (NOAEL) as 1,000 mg/kg/day—the highest dose tested. No treatment-related changes were observed in body weight, organ weight, hematological parameters, clinical biochemistry, or histopathology.
+**Johannah et al. (2016)** investigated the safety of Clovinol, a standardized polyphenolic extract of clove buds. Acute oral administration at 5 g/kg body weight in Wistar rats for 14 days produced no mortality or adverse effects. Subchronic administration (0.25, 0.5, and 1 g/kg/day for 90 days) established the No Observed Adverse Effect Level (NOAEL) as 1,000 mg/kg/day, the highest dose tested. No treatment-related changes were observed in body weight, organ weight, hematological parameters, clinical biochemistry, or histopathology.
 
 **Tajuddin et al. (2004)** reported that oral administration of 500 mg/kg of 50% ethanolic extract of clove to mice produced no signs of mortality or gross behavioral changes.
 
@@ -430,7 +430,7 @@ Pramod, K., Ansari, S. H., & Ali, J. (2025). Antioxidant and anti-inflammatory a
 
 Puspitasari, V., Wahjuni, R. S., Saputro, A. L., Hamid, I. S., & Wibawati, P. A. (2021). Effectiveness of clove flower extract (Syzygium aromaticum L.) as analgesic on licking time reaction in male mice with formalin induction. *Jurnal Medik Veteriner*, 4(2), 226–230. https://doi.org/10.20473/jmv.vol4.iss2.2021.226-230
 
-Raghavenra, H., Diwakr, B. T., Lokesh, B. R., & Naidu, K. A. (2006). Eugenol—The active principle from cloves inhibits 5-lipoxygenase activity and leukotriene-C4 in human PMNL cells. *Prostaglandins, Leukotrienes and Essential Fatty Acids*, 74(1), 23–27. https://doi.org/10.1016/j.plefa.2005.10.002
+Raghavenra, H., Diwakr, B. T., Lokesh, B. R., & Naidu, K. A. (2006). Eugenol - The active principle from cloves inhibits 5-lipoxygenase activity and leukotriene-C4 in human PMNL cells. *Prostaglandins, Leukotrienes and Essential Fatty Acids*, 74(1), 23–27. https://doi.org/10.1016/j.plefa.2005.10.002
 
 Rasheed, A., Laekeman, G., Totte, J., Vlietinck, A. J., & Herman, A. G. (1984). Eugenol and prostaglandin biosynthesis. *New England Journal of Medicine*, 310, 50–51. https://doi.org/10.1056/nejm198401053100115
 
@@ -514,7 +514,7 @@ Gouda, M. R., & Srivastav, S. K. (2022). Eugenol: A natural analgesic and anti-i
 
 Graves, G. (2019). OECD guideline 423: Acute oral toxicity testing in drug development. *Regulatory Toxicology and Pharmacology*, 108, 104456. https://doi.org/10.1016/j.yrtph.2019.104456
 
-Guimarães, A. G., Quintans, J. S. S., & Quintans-Júnior, L. J. (2013). Monoterpenes with analgesic activity—a systematic review. *Phytotherapy Research*, 27(1), 1–15. https://doi.org/10.1002/ptr.4686
+Guimarães, A. G., Quintans, J. S. S., & Quintans-Júnior, L. J. (2013). Monoterpenes with analgesic activity: A systematic review. *Phytotherapy Research*, 27(1), 1–15. https://doi.org/10.1002/ptr.4686
 
 Harel, Z. (2008). Dysmenorrhea in adolescents. *Annals of the New York Academy of Sciences*, 1135, 185–195. https://doi.org/10.1196/annals.1429.007
 
@@ -532,7 +532,7 @@ Jirovetz, L., Buchbauer, G., Stoilova, I., Stoyanova, A., Krastanov, A., & Schmi
 
 Kamkar Asl, M., Nazariborun, A., & Hosseini, M. (2013). Analgesic effect of the aqueous and ethanolic extracts of clove. *Avicenna Journal of Phytomedicine*, 3(2), 186–192. https://pubmed.ncbi.nlm.nih.gov/25050273/
 
-Kamatou, G. P. P., Vermaak, I., & Viljoen, A. M. (2012). Eugenol—from the remote Maluku Islands to the international market place: A review of a remarkable and versatile molecule. *Molecules*, 17(6), 6953–6981. https://doi.org/10.3390/molecules17066953
+Kamatou, G. P. P., Vermaak, I., & Viljoen, A. M. (2012). Eugenol: From the remote Maluku Islands to the international market place: A review of a remarkable and versatile molecule. *Molecules*, 17(6), 6953–6981. https://doi.org/10.3390/molecules17066953
 
 Kannan, A., & Devi, S. (2022). Protective effect of eugenol against various toxicities: A review. *Toxicology Mechanisms and Methods*, 32(4), 243–256. https://doi.org/10.1080/15376516.2021.2005389
 
@@ -546,7 +546,7 @@ Kong, E. H., Kim, H. W., & Kim, S. (2021). Non-pharmacological interventions for
 
 Kressel, I. B., & Lee, H. O. (2022). Eugenol as a local anesthetic: Mechanisms and clinical applications. *Journal of Dental Research*, 101(3), 259–266. https://doi.org/10.1177/00220345211044388
 
-Kumar, V., Mishra, D., Joshi, M. C., Mishra, P., & Tanwar, M. (2021). Syzygium aromaticum: Medicinal properties and phytochemical screening. In *Herbs and Spices—New Processing Technologies*. IntechOpen. https://doi.org/10.5772/intechopen.99199
+Kumar, V., Mishra, D., Joshi, M. C., Mishra, P., & Tanwar, M. (2021). Syzygium aromaticum: Medicinal properties and phytochemical screening. In *Herbs and Spices: New Processing Technologies*. IntechOpen. https://doi.org/10.5772/intechopen.99199
 
 Lakshmi, T., & Geetha, R. V. (2021). Pharmacological and toxicological evaluation of Syzygium aromaticum: A review. *Journal of Pharmacy and Pharmaceutical Sciences*, 24, 112–125. https://doi.org/10.18433/jpps31456
 

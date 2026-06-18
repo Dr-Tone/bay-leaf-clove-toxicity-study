@@ -15,8 +15,7 @@ This roadmap follows the standard structure of the Department of Pharmacology an
 | 0.1 | Define research topic and scope | ✅ Done |
 | 0.2 | Write project concept (`project_concept.md`) | ✅ Done |
 | 0.3 | Submit concept to supervisor for approval | ✅ Done |
-| 0.4 | Secure ethical approval from Faculty Ethics Committee | ⬜ TODO |
-| 0.5 | Obtain plant identification/voucher number from PBB Herbarium | ⬜ TODO |
+| 0.4 | Obtain plant identification/voucher number from PBB Herbarium | ⬜ TODO |
 
 ---
 
@@ -28,19 +27,19 @@ The introduction chapter combines background, literature review, rationale, ques
 
 | Section | Content | Status |
 |---------|---------|--------|
-| **1.1** | Dysmenorrhea: Definition, classification (primary vs secondary), clinical presentation | ⬜ TODO |
-| **1.2** | Epidemiology: Global and Nigerian prevalence, socioeconomic impact, quality of life | ⬜ TODO |
-| **1.3** | Pathophysiology of Primary Dysmenorrhea: Prostaglandin synthesis, COX-1/COX-2 pathway, PGF2α, uterine hypercontractility, vasoconstriction, ischemia | ⬜ TODO |
-| **1.4** | Current Pharmacotherapy: NSAIDs (ibuprofen, naproxen), hormonal contraceptives — mechanisms, efficacy, adverse effects, contraindications, the need for alternatives | ⬜ TODO |
-| **1.5** | Medicinal Plants in Dysmenorrhea Management: Fennel, ginger, chamomile, cinnamon — evidence from systematic reviews | ⬜ TODO |
-| **1.6** | Syzygium aromaticum (Clove): Taxonomy, botanical description, traditional uses, phytochemistry (eugenol, β-caryophyllene, eugenyl acetate) | ⬜ TODO |
-| **1.7** | Pharmacological Profile of Eugenol/Clove: Anti-inflammatory (COX-2, NF-κB, TNF-α, IL-6), analgesic (formalin test, writhing test), antispasmodic (Ca²⁺ channel blockade), antioxidant | ⬜ TODO |
-| **1.8** | Acute Oral Toxicity: OECD Guideline 423 (Acute Toxic Class Method), purpose, dosing, endpoint (LD50), classification system | ⬜ TODO |
-| **1.9** | Animal Models of Dysmenorrhea: Oxytocin-induced writhing model in mice, estradiol benzoate sensitization, measurement of writhing episodes | ⬜ TODO |
-| **1.10** | Rationale for the Study: Gap in literature, justification for clove extract in dysmenorrhea | ⬜ TODO |
-| **1.11** | Research Questions | ⬜ TODO |
-| **1.12** | Study Hypotheses (H0 and H1) | ⬜ TODO |
-| **1.13** | Aim and Specific Objectives | Already drafted in concept |
+| **1.1** | Dysmenorrhea: Definition, classification (primary vs secondary), clinical presentation | ✅ Done |
+| **1.2** | Epidemiology: Global and Nigerian prevalence, socioeconomic impact, quality of life | ✅ Done |
+| **1.3** | Pathophysiology of Primary Dysmenorrhea: Prostaglandin synthesis, COX-1/COX-2 pathway, PGF2α, uterine hypercontractility, vasoconstriction, ischemia | ✅ Done |
+| **1.4** | Current Pharmacotherapy: NSAIDs (ibuprofen, naproxen), hormonal contraceptives — mechanisms, efficacy, adverse effects, contraindications, the need for alternatives | ✅ Done |
+| **1.5** | Medicinal Plants in Dysmenorrhea Management: Fennel, ginger, chamomile, cinnamon — evidence from systematic reviews | ✅ Done |
+| **1.6** | Syzygium aromaticum (Clove): Taxonomy, botanical description, traditional uses, phytochemistry (eugenol, β-caryophyllene, eugenyl acetate) | ✅ Done |
+| **1.7** | Pharmacological Profile of Eugenol/Clove: Anti-inflammatory (COX-2, NF-κB, TNF-α, IL-6), analgesic (formalin test, writhing test), antispasmodic (Ca²⁺ channel blockade), antioxidant | ✅ Done |
+| **1.8** | Acute Oral Toxicity: OECD Guideline 423 (Acute Toxic Class Method), purpose, dosing, endpoint (LD50), classification system | ✅ Done |
+| **1.9** | Animal Models of Dysmenorrhea: Oxytocin-induced writhing model in mice, estradiol benzoate sensitization, measurement of writhing episodes | ✅ Done |
+| **1.10** | Rationale for the Study: Gap in literature, justification for clove extract in dysmenorrhea | ✅ Done |
+| **1.11** | Research Questions | ✅ Done |
+| **1.12** | Study Hypotheses (H0 and H1) | ✅ Done |
+| **1.13** | Aim and Specific Objectives | ✅ Done |
 
 ### Key rules for this chapter:
 - Every factual claim needs a citation
@@ -61,7 +60,7 @@ This chapter describes exactly what materials were used and how the experiments 
 | 2.1.1 | Equipment list: organ bath, force transducer, PowerLab, micropipettes, cages, surgical kit, etc. | ⬜ TODO |
 | 2.1.2 | Chemicals and reagents: NaCl, KCl, CaCl₂, glucose, NaHCO₃, ethanol, oxytocin, estradiol benzoate, tween 80, EDTA, formalin, ibuprofen | ⬜ TODO |
 | 2.1.3 | Collection and extraction of plant material: where purchased, identification/voucher, Soxhlet extraction with hydroethanolic solvent (1:1), yield percentage | ⬜ TODO |
-| 2.1.4 | Experimental animals: species, sex, weight range, source, acclimatization period, housing conditions, ethical approval reference | ⬜ TODO |
+| 2.1.4 | Experimental animals: species, sex, weight range, source, acclimatization period, housing conditions | ⬜ TODO |
 | **2.2** | **Methods** | ⬜ TODO |
 | 2.2.1 | Acute oral toxicity test (OECD 423): dose selection (300 mg/kg and 2000 mg/kg step), grouping (n=3 per step), 14-day observation period, parameters monitored (mortality, behavioral signs, body weight, food/water intake), necropsy and gross pathology | ⬜ TODO |
 | 2.2.2 | Antidysmenorrhea study — oxytocin-induced writhing model: estradiol benzoate sensitization (1 mg/kg s.c. for 5 days), oxytocin challenge (1 IU/kg i.p.), writhing count, group design (negative control, positive control [ibuprofen], 3-4 dose groups of SAE) | ⬜ TODO |
@@ -158,7 +157,7 @@ Interpret your results in the context of existing literature.
 | Section | Status |
 |---------|--------|
 | References list (clean, formatted, alphabetized, with DOIs) | Already exists in `project_concept.md` |
-| Appendices (ethical approval letter, plant identification letter, raw data tables) | ⬜ TODO |
+| Appendices (plant identification letter, raw data tables) | ⬜ TODO |
 
 ---
 

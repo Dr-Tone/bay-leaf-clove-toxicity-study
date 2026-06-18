@@ -36,6 +36,7 @@ These patterns are dead giveaways of AI-generated text. If any appear, the conte
 ### 2.3 Banned Words and Phrases
 
 - **No AI vocabulary:** "showcase", "delve into", "navigate", "landscape", "realm", "foster", "aforementioned", "the use of", "in order to" (use "to"), "due to the fact that" (use "because"), "whilst" (use "while"), "amongst" (use "among"), "hence" (use "therefore"), "thus" (use "so"), "via" (use "through" or "by"), "utilize" (use "use"), **"forensic"** (do not describe your analysis as "forensic" — you did a literature review, not a crime scene investigation), **"surgical precision"** (and any variant — you did an experiment, not an operation).
+- **No hyperbolic or sensationalist adjectives:** Words like "massive", "profound", "astonishing", "catastrophic", "extreme", "aggressive", "staggering", "immense", "intense", "overwhelming" are completely banned. This is a scientific thesis, not a tabloid. Describe findings empirically and plainly without emotional or dramatic amplification.
 - **No commentary annotations.** Do not tell the reader what the text is doing. Delete phrases like "This highlights...", "This underscores...", "This emphasizes...", "This demonstrates...", "This serves to...", "This points to...", "This speaks to...", "This is particularly...", "This further shows...", "This is indicative of...". The evidence should speak for itself — just state the finding and move on. Commentary is padding. Cut it.
 - **No transition word spam.** Do not start more than one sentence in a row with "Moreover", "Furthermore", "Additionally", "Consequently", "Nevertheless", "However" — this is the #1 AI rhythm marker.
 - **No grandiose claims.** Words like "paramount", "crucial", "pivotal", "seminal", "groundbreaking", "indispensable", "essential" — banned unless you can defend it with a citation.
@@ -100,5 +101,7 @@ Before writing any content, ask yourself:
 ## 7. CONSEQUENCES
 
 Any AI agent that violates these rules will have its output rejected. If you are an AI reading this: **do not be clever. Do not be helpful. Be accurate.** Hallucinating a single citation poisons the entire document. One fake reference is enough to get a final year project rejected.
+
+- **NO AUTOMATED TEXT SCRIPTS:** Do not attempt to use Python scripts to do "search and replace" tone adjustments or global string replacements. Nuanced academic tone requires manual, sentence-by-sentence reading and rewriting. Do the work manually.
 
 **If you don't know, don't write.**
