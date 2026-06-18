@@ -205,14 +205,15 @@ def build_docx(md_path, docx_path, image_path):
             continue
 
         # Tables
-        if line.startswith('|') and i+1 < len(lines) and '| ---' in lines[i+1]:
+        if line.startswith('|') and i+1 < len(lines) and re.match(r'^\|[\s:\-\|]+$', lines[i+1].strip()):
             table_lines = []
             while i < len(lines) and '|' in lines[i]:
                 table_lines.append(lines[i].strip())
                 i += 1
             rows = []
             for tline in table_lines:
-                if '| ---' in tline and ':' not in tline: continue
+                if re.match(r'^\|[\s:\-\|]+$', tline):
+                    continue
                 cells = [clean_html(c).strip() for c in tline.split('|')]
                 if cells and not cells[0]: cells = cells[1:]
                 if cells and not cells[-1]: cells = cells[:-1]
