@@ -416,6 +416,8 @@ def build_docx(md_path, docx_path, image_path):
                 target_img = image_path
             else:
                 target_img = raw_path
+                if not os.path.isabs(target_img):
+                    target_img = os.path.join(os.path.dirname(md_path), target_img)
 
             if os.path.exists(target_img):
                 p_img = doc.add_paragraph()
@@ -427,7 +429,10 @@ def build_docx(md_path, docx_path, image_path):
                 if caption:
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    run_cap = p_cap.add_run(f"Figure: {caption}")
+                    cap_text = caption
+                    if not cap_text.lower().startswith("figure"):
+                        cap_text = f"Figure: {cap_text}"
+                    run_cap = p_cap.add_run(cap_text)
                     run_cap.italic = True
                     set_font(run_cap, size=11)
                     p_cap.paragraph_format.space_after = Pt(12)
