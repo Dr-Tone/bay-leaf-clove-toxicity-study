@@ -82,11 +82,11 @@ def generate_visualizations():
     palette = sns.color_palette("Set2", 5)
     
     # FIG 1: Grouped Bar Charts with SEM Error Bars (Multi-panel for Clove and Bay Leaf)
-    fig_clove, axes_cl = plt.subplots(4, 2, figsize=(14, 18))
+    fig_clove, axes_cl = plt.subplots(2, 4, figsize=(20, 9.5))
     fig_clove.suptitle("Clove Assay Biochemical Markers (Mean ± SEM)", fontsize=16, fontweight='bold', y=0.98)
     axes_cl = axes_cl.flatten()
     
-    fig_bay, axes_bay = plt.subplots(4, 2, figsize=(14, 18))
+    fig_bay, axes_bay = plt.subplots(2, 4, figsize=(20, 9.5))
     fig_bay.suptitle("Bay Leaf Assay Biochemical Markers (Mean ± SEM)", fontsize=16, fontweight='bold', y=0.98)
     axes_bay = axes_bay.flatten()
     
@@ -102,9 +102,14 @@ def generate_visualizations():
         cl_sems = cl_sems.reindex(order)
         
         bars = ax_cl.bar(order, cl_means, yerr=cl_sems, capsize=6, color=palette[:4], edgecolor='black', alpha=0.9)
-        ax_cl.set_title(marker_titles[marker], fontweight='bold')
+        ax_cl.set_title(marker_titles[marker], fontweight='bold', fontsize=12)
         ax_cl.set_ylabel("Value")
+        ax_cl.set_xticks(range(len(order)))
         ax_cl.set_xticklabels(order, rotation=15, ha='right')
+        
+        # Calculate y-axis limits to prevent text truncation
+        max_val_cl = max(cl_means + cl_sems.fillna(0))
+        ax_cl.set_ylim(0, max_val_cl * 1.25)
         
         # Add labels on top of bars
         for bar in bars:
@@ -124,9 +129,14 @@ def generate_visualizations():
         bay_sems = bay_sems.reindex(order_bay)
         
         bars_bay = ax_bay.bar(order_bay, bay_means, yerr=bay_sems, capsize=6, color=palette[:5], edgecolor='black', alpha=0.9)
-        ax_bay.set_title(marker_titles[marker], fontweight='bold')
+        ax_bay.set_title(marker_titles[marker], fontweight='bold', fontsize=12)
         ax_bay.set_ylabel("Value")
+        ax_bay.set_xticks(range(len(order_bay)))
         ax_bay.set_xticklabels(order_bay, rotation=15, ha='right')
+        
+        # Calculate y-axis limits to prevent text truncation
+        max_val_bay = max(bay_means + bay_sems.fillna(0))
+        ax_bay.set_ylim(0, max_val_bay * 1.25)
         
         for bar in bars_bay:
             height = bar.get_height()
@@ -140,11 +150,11 @@ def generate_visualizations():
     axes_cl[-1].axis('off')
     axes_bay[-1].axis('off')
     
-    fig_clove.tight_layout()
+    fig_clove.tight_layout(rect=[0, 0, 1, 0.95])
     fig_clove.savefig(os.path.join(graphs_dir, "clove_markers_bar_chart.png"), dpi=300)
     plt.close(fig_clove)
     
-    fig_bay.tight_layout()
+    fig_bay.tight_layout(rect=[0, 0, 1, 0.95])
     fig_bay.savefig(os.path.join(graphs_dir, "bay_leaf_markers_bar_chart.png"), dpi=300)
     plt.close(fig_bay)
     
