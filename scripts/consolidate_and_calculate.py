@@ -108,11 +108,11 @@ def apply_summary_styles(sheet, start_row, max_col):
         cell.border = thin_border
 
 def consolidate():
-    cleaned_dir = "/Users/macboook/PROJECTS/Final year project work/bay-leaf-clove-toxicity-study/cook/cleaned"
+    cleaned_dir = "/Users/macboook/PROJECTS/Final year project work/bay-leaf-clove-toxicity-study/cleaning/cleaned"
     clove_fp = os.path.join(cleaned_dir, "PHILIP OXIDATIVE STRESS MARKERS RESULTS (2026).xlsx")
     bay_fp = os.path.join(cleaned_dir, "PHILIP OXIDATIVE STRESS MARKERS RESULTS 2 (2026).xlsx")
     
-    output_fp = "/Users/macboook/PROJECTS/Final year project work/bay-leaf-clove-toxicity-study/cook/OXIDATIVE_STRESS_MARKERS_CONSOLIDATED.xlsx"
+    output_fp = "/Users/macboook/PROJECTS/Final year project work/bay-leaf-clove-toxicity-study/cleaning/OXIDATIVE_STRESS_MARKERS_CONSOLIDATED.xlsx"
     
     # 1. Load Clove workbook
     wb_clove = openpyxl.load_workbook(clove_fp, data_only=True)
@@ -163,10 +163,13 @@ def consolidate():
         nc_stat = calculate_group_stats(nc_rows, col)
         ib_stat = calculate_group_stats(ib_rows, col)
         
-        # p-values
-        p_mc_vs_nc = get_p_value(mc_stat["values"], nc_stat["values"])
-        p_cl_vs_mc = get_p_value(cl_stat["values"], mc_stat["values"])
-        p_ib_vs_mc = get_p_value(ib_stat["values"], mc_stat["values"])
+        # Tukey HSD p-values
+        # Group order: NC (0), MC (1), CL (2), IB (3)
+        res = stats.tukey_hsd(nc_stat["values"], mc_stat["values"], cl_stat["values"], ib_stat["values"])
+        p_mc_vs_nc = res.pvalue[1, 0]
+        p_cl_vs_mc = res.pvalue[2, 1]
+        p_ib_vs_mc = res.pvalue[3, 1]
+        p_cl_vs_ib = res.pvalue[2, 3]
         
         clove_stats[col] = {
             "nc": nc_stat,
@@ -175,7 +178,8 @@ def consolidate():
             "ib": ib_stat,
             "p_mc_nc": p_mc_vs_nc,
             "p_cl_mc": p_cl_vs_mc,
-            "p_ib_mc": p_ib_vs_mc
+            "p_ib_mc": p_ib_vs_mc,
+            "p_cl_ib": p_cl_vs_ib
         }
         
     # Append Clove stats to sheet
@@ -227,7 +231,8 @@ def consolidate():
     p_values_to_write = [
         ("p-value (MC vs NC)", "p_mc_nc"),
         ("p-value (CL vs MC)", "p_cl_mc"),
-        ("p-value (IB vs MC)", "p_ib_mc")
+        ("p-value (IB vs MC)", "p_ib_mc"),
+        ("p-value (CL vs IB)", "p_cl_ib")
     ]
     
     for label, key in p_values_to_write:
@@ -285,11 +290,15 @@ def consolidate():
         ng_stat = calculate_group_stats(ng_rows, col)
         cl_bay_stat = calculate_group_stats(cl_bay_rows, col)
         
-        # p-values
-        p_mg_vs_ng = get_p_value(mg_stat["values"], ng_stat["values"])
-        p_bl_vs_mg = get_p_value(bl_stat["values"], mg_stat["values"])
-        p_ibu_vs_mg = get_p_value(ibu_stat["values"], mg_stat["values"])
-        p_cl_vs_mg = get_p_value(cl_bay_stat["values"], mg_stat["values"])
+        # Tukey HSD p-values
+        # Group order: NG (0), MG (1), BL (2), IBU (3), CL (4)
+        res_bay = stats.tukey_hsd(ng_stat["values"], mg_stat["values"], bl_stat["values"], ibu_stat["values"], cl_bay_stat["values"])
+        p_mg_vs_ng = res_bay.pvalue[1, 0]
+        p_bl_vs_mg = res_bay.pvalue[2, 1]
+        p_ibu_vs_mg = res_bay.pvalue[3, 1]
+        p_cl_vs_mg = res_bay.pvalue[4, 1]
+        p_bl_vs_ibu = res_bay.pvalue[2, 3]
+        p_cl_vs_ibu = res_bay.pvalue[4, 3]
         
         bay_stats[col] = {
             "ng": ng_stat,
@@ -300,7 +309,9 @@ def consolidate():
             "p_mg_ng": p_mg_vs_ng,
             "p_bl_mg": p_bl_vs_mg,
             "p_ibu_mg": p_ibu_vs_mg,
-            "p_cl_mg": p_cl_vs_mg
+            "p_cl_mg": p_cl_vs_mg,
+            "p_bl_ibu": p_bl_vs_ibu,
+            "p_cl_ibu": p_cl_vs_ibu
         }
         
     # Append Bay Leaf stats to sheet
@@ -344,7 +355,9 @@ def consolidate():
         ("p-value (MG vs NG)", "p_mg_ng"),
         ("p-value (BL vs MG)", "p_bl_mg"),
         ("p-value (IBU vs MG)", "p_ibu_mg"),
-        ("p-value (CL vs MG)", "p_cl_mg")
+        ("p-value (CL vs MG)", "p_cl_mg"),
+        ("p-value (BL vs IBU)", "p_bl_ibu"),
+        ("p-value (CL vs IBU)", "p_cl_ibu")
     ]
     
     for label, key in p_values_to_write_bay:
