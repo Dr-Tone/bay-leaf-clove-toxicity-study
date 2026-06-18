@@ -184,30 +184,39 @@ def generate_visualizations():
         plt.savefig(os.path.join(graphs_dir, f"bay_leaf_{marker.lower().replace(' ', '_')}_boxplot.png"), dpi=300)
         plt.close()
         
-    # FIG 3: Pearson Correlation Heatmap
-    corr_matrix = df_all[markers].corr(method='pearson')
+    # FIG 3: Pearson Correlation Heatmaps (Separate for Clove and Bay Leaf Runs)
+    # Clove Correlation Heatmap
+    corr_matrix_clove = df_clove[markers].corr(method='pearson')
     plt.figure(figsize=(9, 7))
-    sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".3f", linewidths=0.5, vmin=-1, vmax=1,
+    sns.heatmap(corr_matrix_clove, annot=True, cmap="coolwarm", fmt=".3f", linewidths=0.5, vmin=-1, vmax=1,
                 cbar_kws={'label': 'Pearson Correlation Coefficient (r)'})
-    plt.title("Correlation Matrix of Oxidative Stress Markers (All Combined Data)", fontweight='bold', fontsize=13)
+    plt.title("Correlation Matrix of Oxidative Stress Markers (Clove Assay)", fontweight='bold', fontsize=13)
     plt.tight_layout()
-    plt.savefig(os.path.join(graphs_dir, "markers_correlation_heatmap.png"), dpi=300)
+    plt.savefig(os.path.join(graphs_dir, "clove_correlation_heatmap.png"), dpi=300)
+    plt.close()
+
+    # Bay Leaf Correlation Heatmap
+    corr_matrix_bay = df_bay[markers].corr(method='pearson')
+    plt.figure(figsize=(9, 7))
+    sns.heatmap(corr_matrix_bay, annot=True, cmap="coolwarm", fmt=".3f", linewidths=0.5, vmin=-1, vmax=1,
+                cbar_kws={'label': 'Pearson Correlation Coefficient (r)'})
+    plt.title("Correlation Matrix of Oxidative Stress Markers (Bay Leaf Assay)", fontweight='bold', fontsize=13)
+    plt.tight_layout()
+    plt.savefig(os.path.join(graphs_dir, "bay_leaf_correlation_heatmap.png"), dpi=300)
     plt.close()
     
-    # FIG 4: Radar (Spider) Chart of Normalized Profiles
-    # Normalize means to a [0, 1] scale for fair radar plotting
-    df_norm = df_all.copy()
+    # FIG 4: Radar (Spider) Charts of Normalized Profiles (Normalized within each run separately)
+    # 4.1 Clove Radar Chart
+    df_clove_norm = df_clove.copy()
     for marker in markers:
-        min_v = df_all[marker].min()
-        max_v = df_all[marker].max()
+        min_v = df_clove[marker].min()
+        max_v = df_clove[marker].max()
         if max_v > min_v:
-            df_norm[marker] = (df_all[marker] - min_v) / (max_v - min_v)
+            df_clove_norm[marker] = (df_clove[marker] - min_v) / (max_v - min_v)
         else:
-            df_norm[marker] = 0.0
-        
-    # Clove Group Normalized Radar
-    clove_radar_means = df_norm[df_norm["Group"].isin(["NC", "MC", "CL", "IB"])].groupby("Group")[markers].mean()
-    # Reorder index to follow standard flow
+            df_clove_norm[marker] = 0.0
+
+    clove_radar_means = df_clove_norm.groupby("Group")[markers].mean()
     clove_radar_means = clove_radar_means.reindex(["NC", "MC", "CL", "IB"])
     
     angles = np.linspace(0, 2 * np.pi, len(markers), endpoint=False).tolist()
@@ -222,7 +231,7 @@ def generate_visualizations():
     plt.yticks([0.2, 0.4, 0.6, 0.8, 1.0], ["0.2", "0.4", "0.6", "0.8", "1.0"], color="grey", size=9)
     plt.ylim(0, 1)
     
-    group_labels = {
+    group_labels_clove = {
         "NC": "Normal Control (NC)",
         "MC": "Model Control (MC)",
         "CL": "Clove Extract (CL)",
@@ -230,15 +239,59 @@ def generate_visualizations():
     }
     
     for grp in ["NC", "MC", "CL", "IB"]:
-        values = clove_radar_means.loc[grp].values.flatten().tolist()
-        values += values[:1]
-        ax.plot(angles, values, linewidth=2, linestyle='solid', label=group_labels[grp])
-        ax.fill(angles, values, alpha=0.15)
+        if grp in clove_radar_means.index:
+            values = clove_radar_means.loc[grp].values.flatten().tolist()
+            values += values[:1]
+            ax.plot(angles, values, linewidth=2, linestyle='solid', label=group_labels_clove[grp])
+            ax.fill(angles, values, alpha=0.15)
         
     plt.title("Normalized Oxidative Stress Profile (Clove Assay)", size=14, fontweight='bold', y=1.1)
     plt.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
     plt.tight_layout()
     plt.savefig(os.path.join(graphs_dir, "clove_markers_radar_chart.png"), dpi=300)
+    plt.close()
+
+    # 4.2 Bay Leaf Radar Chart
+    df_bay_norm = df_bay.copy()
+    for marker in markers:
+        min_v = df_bay[marker].min()
+        max_v = df_bay[marker].max()
+        if max_v > min_v:
+            df_bay_norm[marker] = (df_bay[marker] - min_v) / (max_v - min_v)
+        else:
+            df_bay_norm[marker] = 0.0
+
+    bay_radar_means = df_bay_norm.groupby("Group")[markers].mean()
+    bay_radar_means = bay_radar_means.reindex(["NG", "MG", "BL", "IBU", "CL"])
+    
+    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    
+    plt.xticks(angles[:-1], markers, color='grey', size=11, fontweight='bold')
+    ax.set_rlabel_position(0)
+    plt.yticks([0.2, 0.4, 0.6, 0.8, 1.0], ["0.2", "0.4", "0.6", "0.8", "1.0"], color="grey", size=9)
+    plt.ylim(0, 1)
+    
+    group_labels_bay = {
+        "NG": "Normal Control (NG)",
+        "MG": "Model Control (MG)",
+        "BL": "Bay Leaf Extract (BL)",
+        "IBU": "Ibuprofen (IBU)",
+        "CL": "Clove Extract (CL)"
+    }
+    
+    for grp in ["NG", "MG", "BL", "IBU", "CL"]:
+        if grp in bay_radar_means.index:
+            values = bay_radar_means.loc[grp].values.flatten().tolist()
+            values += values[:1]
+            ax.plot(angles, values, linewidth=2, linestyle='solid', label=group_labels_bay[grp])
+            ax.fill(angles, values, alpha=0.15)
+        
+    plt.title("Normalized Oxidative Stress Profile (Bay Leaf Assay)", size=14, fontweight='bold', y=1.1)
+    plt.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
+    plt.tight_layout()
+    plt.savefig(os.path.join(graphs_dir, "bay_leaf_markers_radar_chart.png"), dpi=300)
     plt.close()
     
     print("Visualizations generated successfully.")

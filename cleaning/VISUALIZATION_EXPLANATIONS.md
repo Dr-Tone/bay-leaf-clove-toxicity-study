@@ -2,9 +2,9 @@
 
 ## Summary Statistics of Biochemical Assays
 
-Biochemical parameters were evaluated across Clove and Bay Leaf runs. Table 3.1 summarizes the group means and standard errors for the parameters measured during the Clove run.
+Biochemical parameters were evaluated across Clove and Bay Leaf assays. Table 3.1 summarizes the group means and standard errors for the parameters measured during the Clove assay.
 
-### Table 3.1: Group Means and Standard Errors (Clove Run)
+### Table 3.1: Group Means and Standard Errors (Clove Assay)
 
 | Group | Prot (g/dL) | SOD (U/g Prot) | CAT (U/g Prot) | GPx (U/g Prot) | MDA (mol/g Prot) | Red. GSH (ug/mL) | TAC (ug/mL) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -13,9 +13,9 @@ Biochemical parameters were evaluated across Clove and Bay Leaf runs. Table 3.1 
 | **CL** | 0.9114 ± 0.0576 | 1.1535 ± 0.0764 | 0.8102 ± 0.0535 | 1.5567 ± 0.0970 | 0.4470 ± 0.0953 | 68.1196 ± 1.1053 | 37.4126 ± 2.5205 |
 | **IB** | 0.8938 ± 0.1002 | 1.2612 ± 0.1109 | 0.9558 ± 0.0928 | 1.9413 ± 0.2349 | 0.0578 ± 0.0084 | 64.0164 ± 1.3208 | 30.3321 ± 2.4242 |
 
-Table 3.2 summarizes the group means and standard errors for the parameters measured during the Bay Leaf run.
+Table 3.2 summarizes the group means and standard errors for the parameters measured during the Bay Leaf assay.
 
-### Table 3.2: Group Means and Standard Errors (Bay Leaf Run)
+### Table 3.2: Group Means and Standard Errors (Bay Leaf Assay)
 
 | Group | Prot (g/dL) | SOD (U/g Prot) | CAT (U/g Prot) | GPx (U/g Prot) | MDA (mol/g Prot) | Red. GSH (ug/mL) | TAC (ug/mL) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -49,44 +49,50 @@ Box plots show the median and range of individual data points. The box represent
 
 ### Superoxide Dismutase (SOD) Distributions
 
-![Figure 3.3: Superoxide Dismutase (SOD) activity distribution in Clove run.](graphs/clove_sod_boxplot.png)
+![Figure 3.3: Superoxide Dismutase (SOD) activity distribution in Clove assay.](graphs/clove_sod_boxplot.png)
 
-![Figure 3.4: Superoxide Dismutase (SOD) activity distribution in Bay Leaf run.](graphs/bay_leaf_sod_boxplot.png)
+![Figure 3.4: Superoxide Dismutase (SOD) activity distribution in Bay Leaf assay.](graphs/bay_leaf_sod_boxplot.png)
 
-Clove superoxide dismutase distribution and Bay Leaf superoxide dismutase distribution are shown in the box plots above. In the clove run, the box plot shows that the healthy control animals form a tight cluster with high superoxide dismutase activity. The model control animals show a wider spread at a lower activity range. The clove treated animals display a compact distribution at the lowest superoxide dismutase activity level.
+Clove superoxide dismutase distribution and Bay Leaf superoxide dismutase distribution are shown in the box plots above. In the clove assay, the box plot shows that the healthy control animals form a tight cluster with high superoxide dismutase activity. The model control animals show a wider spread at a lower activity range. The clove treated animals display a compact distribution at the lowest superoxide dismutase activity level.
 
-In the bay leaf run, the box plot shows a wide distribution of values across all groups. Individual animals in the normal control group overlap with those in the model control group. The large overlap explains the lack of statistical significance in this run.
+In the bay leaf assay, the box plot shows a wide distribution of values across all groups. Individual animals in the normal control group overlap with those in the model control group. The large overlap explains the lack of statistical significance in this assay.
 
 ### Malondialdehyde (MDA) Distributions
 
-![Figure 3.5: Malondialdehyde (MDA) concentration distribution in Clove run.](graphs/clove_mda_boxplot.png)
+![Figure 3.5: Malondialdehyde (MDA) concentration distribution in Clove assay.](graphs/clove_mda_boxplot.png)
 
-![Figure 3.6: Malondialdehyde (MDA) concentration distribution in Bay Leaf run.](graphs/bay_leaf_mda_boxplot.png)
+![Figure 3.6: Malondialdehyde (MDA) concentration distribution in Bay Leaf assay.](graphs/bay_leaf_mda_boxplot.png)
 
-Clove malondialdehyde distribution and Bay Leaf malondialdehyde distribution are presented in the box plots above. In the clove run, healthy control animals have a median malondialdehyde value of 0.3166 mol/g Prot. The model control animals have a median malondialdehyde value of 0.1549 mol/g Prot. The clove treated group shows a median malondialdehyde value of 0.3661 mol/g Prot, with individual values ranging from 0.1902 to 1.8821 mol/g Prot.
+Clove malondialdehyde distribution and Bay Leaf malondialdehyde distribution are presented in the box plots above. In the clove assay, healthy control animals have a median malondialdehyde value of 0.3166 mol/g Prot. The model control animals have a median malondialdehyde value of 0.1549 mol/g Prot. The clove treated group shows a median malondialdehyde value of 0.3661 mol/g Prot, with individual values ranging from 0.1902 to 1.8821 mol/g Prot.
 
-In the bay leaf run, the box plot reveals similar median values between the normal control and model control groups. The bay leaf treated group shows a median malondialdehyde value of 0.2753 mol/g Prot, with a wide distribution.
+In the bay leaf assay, the box plot reveals similar median values between the normal control and model control groups. The bay leaf treated group shows a median malondialdehyde value of 0.2753 mol/g Prot, with a wide distribution.
 
 ## Correlation Analysis of Oxidative Stress Parameters
 
 A Pearson correlation coefficient measures the linear strength and direction of the relationship between two variables. The coefficient ranges from -1.000 to +1.000. A value of +1.000 represents a perfect positive correlation. A value of -1.000 represents a perfect negative correlation. A value of 0.000 indicates no linear relationship.
 
-![Figure 3.7: Heatmap representing Pearson correlation coefficients (r) between all biochemical markers.](graphs/markers_correlation_heatmap.png)
+### Figure 3.7: Heatmap representing Pearson correlation coefficients (r) for Clove assay.
+![Figure 3.7: Heatmap representing Pearson correlation coefficients (r) for Clove assay.](graphs/clove_correlation_heatmap.png)
 
-In this heatmap, the correlation values were calculated using all combined animal data from the clove and bay leaf runs.
+### Figure 3.8: Heatmap representing Pearson correlation coefficients (r) for Bay Leaf assay.
+![Figure 3.8: Heatmap representing Pearson correlation coefficients (r) for Bay Leaf assay.](graphs/bay_leaf_correlation_heatmap.png)
 
-Catalase and glutathione peroxidase exhibit a positive correlation of 0.702. This indicates that their activity levels tend to change in the same direction. These two enzymes work cooperatively to clear hydrogen peroxide from tissue.
+In the Clove assay (Figure 3.7), the antioxidant enzymes (SOD, CAT, and GPx) show a very strong positive correlation with each other (SOD vs CAT = 0.912, SOD vs GPx = 0.828, CAT vs GPx = 0.757). The primary enzymatic defense lines shift in a coordinated manner. In the Bay Leaf assay (Figure 3.8), a similar positive correlation exists (SOD vs GPx = 0.595, CAT vs GPx = 0.661).
 
-Superoxide dismutase and glutathione peroxidase display a positive correlation of 0.493. This represents another coordinated shift in the enzymatic defense system.
+In both assays, total protein is strongly negatively correlated with SOD, CAT, and GPx activity levels. This is a mathematical result of normalization, as these enzyme activities are expressed per gram of protein (U/g Prot).
 
-Total protein and catalase have a negative correlation of -0.744. Total protein and glutathione peroxidase have a negative correlation of -0.649. This indicates that higher total protein concentrations are associated with lower measured activities of these two enzymes per gram of protein.
-
-Malondialdehyde and reduced glutathione have a negative correlation of -0.094. This indicates that higher levels of cell damage are associated with lower levels of the protective antioxidant glutathione.
+Malondialdehyde shows a negative correlation with reduced glutathione (-0.141 in Clove, -0.054 in Bay Leaf). High lipid peroxidation is associated with glutathione consumption.
 
 ## Radial Profiling of Oxidative Stress Biomarkers
 
-The radar chart displays the normalized mean values of all seven parameters on a single circular axis. The healthy control, model control, and treatment groups form distinct geometric shapes. This chart provides a holistic view of the protective profile of the clove extract compared to the healthy and model states.
+The radar charts display the normalized mean values of all seven parameters on a single circular axis. The healthy control, model control, and treatment groups form distinct geometric shapes. This provides a holistic view of the biometric profile of the treatments compared to the healthy and model states.
 
-![Figure 3.8: Radar chart representing the normalized biometric profiles of Clove extract treated cohorts.](graphs/clove_markers_radar_chart.png)
+### Figure 3.9: Radar chart representing the normalized biometric profiles of Clove extract treated cohorts.
+![Figure 3.9: Radar chart representing the normalized biometric profiles of Clove extract treated cohorts.](graphs/clove_markers_radar_chart.png)
 
-The radar chart maps the normalized mean values of the seven parameters on a single circular axis. The normal control group forms a distinct geometric shape characterized by high antioxidant levels. The model control group displays a shifted shape that highlights the depletion of superoxide dismutase and catalase. The clove treated group forms a shape that overlaps with the model control group, indicating a lack of protective recovery.
+### Figure 3.10: Radar chart representing the normalized biometric profiles of Bay Leaf extract treated cohorts.
+![Figure 3.10: Radar chart representing the normalized biometric profiles of Bay Leaf extract treated cohorts.](graphs/bay_leaf_markers_radar_chart.png)
+
+In the Clove assay (Figure 3.9), the normal control group maintains high antioxidant levels. The model control group shows significant depletion. The clove-treated group forms a shape that overlaps with the model control group, showing a lack of protective recovery.
+
+In the Bay Leaf assay (Figure 3.10), the normal control and model control groups have similar normalized biometric profiles. The bay leaf-treated group shows a distinct shape with slightly higher levels of SOD, CAT, and GPx, though these differences are statistically non-significant.
